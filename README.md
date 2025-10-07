@@ -15,7 +15,7 @@ nids-suricata/ ├── config/ # Suricata configuration ├── scripts/ # A
 
 
 ##  Getting Started
-See [docs/SETUP_GUIDE.md](docs/SETUP_GUIDE.md) for full setup instructions.
+See [docs/SETUP_GUIDE.md](SETUP_GUIDE.md) for full setup instructions.
 
 ## Visualization
 Use [EveBox](https://github.com/jasonish/evebox) or ELK Stack to view alerts in a dashboard.
