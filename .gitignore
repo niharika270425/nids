@@ -1,0 +1,20 @@
+nano .gitignore
+
+
+# Logs
+*.log
+*.pcap
+*.pcapng
+
+# Environment
+.env
+secrets/
+config/*.yaml.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+*.swp
+*~
