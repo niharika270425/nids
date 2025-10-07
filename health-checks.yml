@@ -1,0 +1,27 @@
+mkdir -p .github/workflows
+nano .github/workflows/health-check.yml
+
+
+name: NIDS Health Check
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Daily at 6 AM
+  workflow_dispatch:
+
+jobs:
+  check-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Simulate alert check
+        run: |
+          echo "✅ NIDS setup files are present."
+          echo "🔍 Next: Deploy to server and monitor real traffic."
+          # In real use, you'd call an API or check logs externally
+
+      - name: Notify (example)
+        run: |
+          echo "Consider integrating with Slack or email alerts."
